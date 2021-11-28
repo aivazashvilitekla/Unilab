@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url("./Helvetica-Font/Helvetica.ttf");
+  src: url("./Helvetica-Font/Helvetica.woff") format("embedded-opentype"), url("./Helvetica-Font/Helvetica.woff2") format("woff2");
+}
+
+header {
+  width: 100%;
+  background: #f6f8f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  font-family: "Helvetica";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header > div {
+  width: 50%;
+}
+
+header .logo a {
+  color: #fa6980;
+}
+
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navigation nav {
+  width: 100%;
+}
+
+header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .navigation nav ul li {
+  padding: 0 3%;
+  text-transform: uppercase;
+}
+
+header .navigation nav ul li a {
+  color: #343638;
+  opacity: 50%;
+}
+
+header .navigation nav ul :first-child a {
+  color: black;
+  opacity: 100%;
+}
+
+header .navigation .avatar .avatar-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("/assets/photos/avatar.svg");
+}
+
+main {
+  font-family: "Helvetica";
+}
+
+main .world-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .world-news .pic-info {
+  width: 60%;
+  height: 600px;
+  background: url("../photos/Image.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .world-news .pic-info .text {
+  color: white;
+  width: 60%;
+}
+
+main .world-news .pic-info .text h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main .world-news .pic-info .text h3 {
+  font-size: 20px;
+  margin: 1% 0;
+}
+
+main .world-news .pic-info .text hr {
+  margin: 4% 0;
+}
+
+main .world-news .pic-info .text p {
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+
+main .world-news .pic-info .text a {
+  font-size: 11px;
+  color: white;
+  text-transform: uppercase;
+  background: #fa6980;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+main .world-news .more-news {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .world-news .more-news .container {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .world-news .more-news .container .title {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .world-news .more-news .container .title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .world-news .more-news .container .title .arrows {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .world-news .more-news .container .title .arrows img {
+  width: 15%;
+  cursor: pointer;
+}
+
+main .world-news .more-news .container .title .arrows img {
+  width: 5%;
+}
+
+main .world-news .more-news .container hr {
+  margin: 4% 0;
+  width: 80%;
+  border: 1px solid #ebeded;
+}
+
+main .world-news .more-news .container .card {
+  margin: 4% 0;
+}
+
+main .world-news .more-news .container .card h3 {
+  color: #fa6980;
+  font-weight: bold;
+}
+
+main .world-news .more-news .container .card h4 {
+  font-weight: bold;
+  margin: 4% 0;
+}
+
+main .world-news .more-news .container .card p {
+  color: #a6adb4;
+}
+
+main .world-news .more-news .container .card .time p {
+  margin: 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .world-news .more-news .container .card .time p span {
+  margin-left: 1%;
+  font-size: 13px;
+  color: #a6adb4;
+}
+
+main .trending {
+  background: #ebeded;
+}
+
+main .trending .container {
+  padding: 2% 0 0 0;
+  width: 75%;
+  margin: auto;
+}
+
+main .trending .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .trending .container .title .arrows {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .trending .container .title .arrows img {
+  width: 15%;
+  cursor: pointer;
+}
+
+main .trending .container .title .arrows img {
+  width: 5%;
+}
+
+main .trending .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .trending .container .cards .card {
+  margin: 2% 0;
+  background: #ffffff;
+  width: 30%;
+}
+
+main .trending .container .cards .card .img img {
+  width: 100%;
+}
+
+main .trending .container .cards .card .card-text {
+  width: 80%;
+  margin: 4% auto;
+}
+
+main .trending .container .cards .card .card-text h4 {
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+main .trending .container .cards .card .card-text p {
+  color: #a6adb4;
+}
+
+main .trending .container .cards .card .card-text .time {
+  margin-top: 5%;
+  color: #a6adb4;
+}
+
+main .trending .container .cards .card .card-text .time p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .trending .container .cards .card .card-text .time p span {
+  margin-left: 2%;
+}
+
+main .happening-now {
+  background: #ebeded;
+}
+
+main .happening-now .container {
+  width: 75%;
+  margin: auto;
+}
+
+main .happening-now .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .happening-now .container .title .arrows {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .happening-now .container .title .arrows img {
+  width: 15%;
+  cursor: pointer;
+}
+
+main .happening-now .container .title .arrows img {
+  width: 5%;
+}
+
+main .happening-now .container .gallery .left {
+  width: 65%;
+}
+
+main .happening-now .container .gallery .left .card {
+  margin: 3% 0;
+  width: 100%;
+  height: 430px;
+  background: url("../photos/bridge.png") no-repeat;
+  background-size: cover;
+}
+
+main .happening-now .container .gallery .left .card p {
+  color: #a6adb4;
+}
+
+main .happening-now .container .gallery .left .card .time {
+  margin-top: 2%;
+  color: #a6adb4;
+}
+
+main .happening-now .container .gallery .left .card .time p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .happening-now .container .gallery .left .card .time p span {
+  margin-left: 2%;
+}
+
+main .happening-now .container .gallery .left .card2 {
+  background: url("../photos/forest.png") no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */
