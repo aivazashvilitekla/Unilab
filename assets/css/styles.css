@@ -4,6 +4,16 @@
   src: url("./Helvetica-Font/Helvetica.woff") format("embedded-opentype"), url("./Helvetica-Font/Helvetica.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: 'AcuminPro';
+  src: url("./Acumin/AcuminPro-Regular.ttf");
+  src: url("./Acumin/AcuminPro-Regular.woff") format("embedded-opentype"), url("./Acumin/AcuminPro-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: 'Helvetica';
+}
+
 header {
   width: 100%;
   background: #f6f8f9;
@@ -70,8 +80,11 @@ header .navigation nav ul :first-child a {
 header .navigation .avatar .avatar-container {
   width: 30px;
   height: 30px;
+  background: black;
   border-radius: 50%;
-  background-image: url("/assets/photos/avatar.svg");
+  background-image: url("/assets/photos/avatar.png");
+  background-position: center;
+  background-size: cover;
 }
 
 main {
@@ -215,6 +228,7 @@ main .world-news .more-news .container .card h4 {
 
 main .world-news .more-news .container .card p {
   color: #a6adb4;
+  font-family: 'AcuminPro';
 }
 
 main .world-news .more-news .container .card .time p {
@@ -304,6 +318,10 @@ main .trending .container .cards .card .card-text h4 {
 }
 
 main .trending .container .cards .card .card-text p {
+  font-family: 'AcuminPro';
+}
+
+main .trending .container .cards .card .card-text p {
   color: #a6adb4;
 }
 
@@ -327,6 +345,7 @@ main .trending .container .cards .card .card-text .time p span {
 
 main .happening-now {
   background: #ebeded;
+  padding-bottom: 5%;
 }
 
 main .happening-now .container {
@@ -335,6 +354,7 @@ main .happening-now .container {
 }
 
 main .happening-now .container .title {
+  margin-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,16 +385,35 @@ main .happening-now .container .title .arrows img {
   width: 5%;
 }
 
+main .happening-now .container .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 main .happening-now .container .gallery .left {
   width: 65%;
 }
 
 main .happening-now .container .gallery .left .card {
-  margin: 3% 0;
+  margin-bottom: 5%;
   width: 100%;
   height: 430px;
   background: url("../photos/bridge.png") no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
 main .happening-now .container .gallery .left .card p {
@@ -399,8 +438,176 @@ main .happening-now .container .gallery .left .card .time p span {
   margin-left: 2%;
 }
 
+main .happening-now .container .gallery .left .card .card-text {
+  width: 85%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .happening-now .container .gallery .left .card .card-text h2, main .happening-now .container .gallery .left .card .card-text h3 {
+  font-weight: bold;
+}
+
+main .happening-now .container .gallery .left .card .card-text p {
+  color: white;
+  margin: 1% 0;
+}
+
 main .happening-now .container .gallery .left .card2 {
   background: url("../photos/forest.png") no-repeat;
   background-size: cover;
+  margin-bottom: 0;
+}
+
+main .happening-now .container .gallery .right {
+  width: 30%;
+}
+
+main .happening-now .container .gallery .right .cards {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .happening-now .container .gallery .right .cards .card {
+  margin: 2% 0;
+  margin-top: 0;
+}
+
+main .happening-now .container .gallery .right .cards .card .card-text h4 {
+  font-weight: bold;
+  margin: .5% 0;
+}
+
+main .happening-now .container .gallery .right .cards .card .img img {
+  width: 100%;
+}
+
+footer {
+  background: #a6adb4;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer .navigation {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .navigation .links {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .navigation .links .menu nav ul li a {
+  line-height: 27px;
+  font-weight: bold;
+  color: #CBD0D3;
+}
+
+footer .contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .contact .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .contact .container .form {
+  width: 70%;
+}
+
+footer .contact .container .form input {
+  border: 2px solid rgba(255, 255, 255, 0.253);
+  border-radius: 10px;
+  width: 70%;
+  padding: 2%;
+  background: none;
+  margin-bottom: 3%;
+  outline: none;
+  background: url("../photos/send.svg") no-repeat scroll 95% 50%;
+}
+
+footer .contact .container .form input::-webkit-input-placeholder {
+  color: #CBD0D3;
+}
+
+footer .contact .container .form input:-ms-input-placeholder {
+  color: #CBD0D3;
+}
+
+footer .contact .container .form input::-ms-input-placeholder {
+  color: #CBD0D3;
+}
+
+footer .contact .container .form input::placeholder {
+  color: #CBD0D3;
+}
+
+footer .contact .container .form p {
+  font-size: 14px;
+  color: #CBD0D3;
+}
+
+footer .contact .container .socials {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contact .container .socials > img {
+  width: 10%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,3 +4,10 @@
     src: url('./Helvetica-Font/Helvetica.woff') format('embedded-opentype'),
         url('./Helvetica-Font/Helvetica.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'AcuminPro';
+    src: url('./Acumin/AcuminPro-Regular.ttf');
+    src: url('./Acumin/AcuminPro-Regular.woff') format('embedded-opentype'),
+        url('./Acumin/AcuminPro-Regular.woff2') format('woff2');
+}

@@ -1,0 +1,39 @@
+@mixin arrows($percent) {
+  width: $percent;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 15%;
+    cursor: pointer;
+  }
+}
+@mixin title($percent) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  .arrows {
+    @include arrows($percent);
+    img {
+      width: 5%;
+    }
+  }
+}
+@mixin card-text($percent) {
+  p {
+    color: #a6adb4;
+  }
+  .time {
+    p {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 2%;
+      }
+    }
+
+    margin-top: $percent;
+    color: #a6adb4;
+  }
+}
