@@ -496,6 +496,15 @@ main .happening-now .container .gallery .right .cards .card .card-text h4 {
   margin: .5% 0;
 }
 
+main .happening-now .container .gallery .right .cards .card .card-text .time p span {
+  color: #a6adb4;
+}
+
+main .happening-now .container .gallery .right .cards .card .card-text .time p span span {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
 main .happening-now .container .gallery .right .cards .card .img img {
   width: 100%;
 }

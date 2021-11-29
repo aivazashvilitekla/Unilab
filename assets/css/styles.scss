@@ -251,7 +251,13 @@ main {
                   h4{
                     font-weight: bold;
                     margin: .5% 0;
-                    
+                  }
+                  .time p span{
+                    color: #a6adb4;
+                  }
+                  .time p span span{
+                    font-size: 14px;
+                    text-decoration: underline;
                   }
                 }
                 .img img{
