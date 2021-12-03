@@ -1,0 +1,307 @@
+@import "../../fonts/fonts.scss";
+@import "../mixins/mixins.scss";
+body{
+  font-family: 'Helvetica';
+  background: #f6f8f9;
+}
+
+@import "../commonStyles/header.scss";
+main{
+  .home{
+      width: 80%;
+      margin: 2% auto;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      .url{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 13%;
+          .home-icon{
+            width: 20%;
+          }
+          .pages{
+              width: 80%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-family: 'Helvetica';
+              font-size: 11px;
+              a{
+                color: black;
+              }
+              :first-child a{
+                  font-weight: bold;
+                  
+              }
+          }
+      }
+  }
+  .news{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    .pic-container{
+      width: 50%;
+      height: 500px;
+      background: url("../../photos/story/sea.png") no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        h1{
+          font-size: 32px;
+        }
+        hr{
+          width: 40px;
+          border: 1px solid #fa6980;
+        }
+        p{
+          margin-bottom: 8%;
+        }
+        .avatar{
+          @include avatar("/assets/photos/story/avatar.svg");
+        }
+      }
+    }
+    .form{
+      width: 50%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .form-container{
+        width: 60%;
+        form > div{
+          margin: 8% 0;
+          font-family: 'AcuminPro';
+          font-weight: bold;
+          font-size: 13px;
+          input{
+            width: 90%;
+            padding: 2% 1%;
+            border-radius: 5px;
+            border: 1px solid #aeafaf;
+          }
+        }
+        form input[type=button]{
+          color: white;
+          font-size: 11px;
+          background: #fa6980;
+          padding: 3% 5%;
+          border: 0;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .info{
+    width: 80%;
+    margin: 2% auto;
+    border-top: 2px solid #ebeded;
+    border-bottom: 2px solid #ebeded;
+    padding: 2% 0;
+    .container{
+      display: flex;
+      .avatar-info{
+        width: 30%;
+        .avatar{
+          @include avatar("/assets/photos/story/avatar.svg");
+        }
+        p{
+          font-family: 'AcuminPro';
+          font-weight: bold;
+          font-size: 24px;
+          margin: 2% 0;
+        }
+      }
+      .text{
+        width: 60%;
+        p{
+          column-count: 2;
+          column-gap: 5%;
+          color: #a6adb4;
+          span{
+            display: flex;
+            align-items: center;
+            img{
+              margin-right: 1%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pic-with-description{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #a6adb4;
+    margin-bottom: 3%;
+    .pic img{
+      width: 100%;
+    }
+    .text{
+      margin-top: 2%;
+      p{
+        margin-bottom: 2%;
+        line-height: 26px;
+        width: 70%;
+        color: #a6adb4;
+        font-size: 14px;
+      }
+    }
+    .extra-p{
+      display: none
+    }
+  }
+  .pages{
+    display: none;
+  }
+}
+@import "../commonStyles/footer.scss";
+
+// MEDIA QUERIES
+@media only screen and (max-width: 1080px) {
+  main{
+    .home .url{
+      width: 20%;
+      .pages{
+        margin: 0;
+      }
+    }
+    .news{
+      flex-direction: column;
+      .pic-container, .form{
+        width: 100%;
+      }
+      .form{
+        padding-bottom: 2%;
+      }
+    }
+    .info{
+      .container{
+        flex-direction: column;
+        .avatar-info{
+          width: 40%;
+          margin-bottom: 3%;
+        }
+        .text{
+          width: 100%;
+        }
+      }
+    }
+    .pic-with-description{
+      .text p{
+        width: 100%;
+      }
+      .extra-p{
+        display: block;
+        margin-bottom: 2%;
+        line-height: 30px;
+        font-weight: bold;
+      }
+    }
+    .pages{
+      display: block;
+      width: 40%;
+      margin: 0 auto;
+      margin-bottom: 4%;
+      .container{
+        display: flex;
+        justify-content: center;
+        
+        div{
+          margin: 0 3%;
+          padding-bottom: 1%;
+          border-bottom: 2px solid #fa6980;
+          color: #a6adb4;
+          font-size: 11px;
+          cursor: pointer;
+          .first{
+            color: black;
+            font-weight: bold;
+          }
+        }
+        :last-child{
+          border-bottom: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px){
+  main{
+    .home .url{
+      width: 30%;
+      .pages{
+        margin: 0;
+      }
+    }
+  }
+}
+
+// HEADER
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    box-sizing: border-box;
+    .burger-menu{
+      width: 50%;
+      display: block;
+    }
+    .slide{
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  header .navigation, header .logo{
+    display: none;
+  }
+  main{
+    .home{
+      display: none;
+    }
+    .news, .info, .pic-with-description{
+      width: 100%;
+    }
+    .info{
+      .container{
+        width: 90%;
+        margin: 2% auto;
+        .avatar-info{
+          width: 100%;
+        }
+        .text p{
+          margin: 2% 0;
+          column-count: 1;
+          text-align: justify;
+          .sp-none{
+            margin: 1% 0;
+          }
+        }
+      }
+      
+    }
+    .pic-with-description{
+      width: 90%;
+      margin: 2% auto;
+    }
+  }
+  footer{
+    display: none;
+  }
+}

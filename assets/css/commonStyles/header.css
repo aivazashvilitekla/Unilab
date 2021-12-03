@@ -1,0 +1,85 @@
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  font-family: "Helvetica";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .burger-menu, header .slide {
+  display: none;
+}
+
+header .logo, header .navigation {
+  width: 50%;
+}
+
+header .logo a {
+  color: #fa6980;
+}
+
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navigation nav {
+  width: 100%;
+}
+
+header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .navigation nav ul li {
+  padding: 0 3%;
+  text-transform: uppercase;
+}
+
+header .navigation nav ul li a {
+  color: #343638;
+  opacity: 50%;
+}
+
+header .navigation nav ul :first-child a {
+  color: black;
+  opacity: 100%;
+}
+
+header .navigation .avatar .avatar-container {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  background-image: url("/assets/photos/avatar.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 650px) {
+  header .logo {
+    width: 20%;
+  }
+  header .navigation {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=header.css.map */

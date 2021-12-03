@@ -1,0 +1,76 @@
+footer {
+  background: #a6adb4;
+  padding: 2%;
+  display: flex;
+  // box-sizing: border-box;
+  h2 {
+    color: white;
+  }
+  .navigation {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    .links {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      .menu nav ul li a {
+        line-height: 27px;
+        font-weight: bold;
+        color: #cbd0d3;
+      }
+    }
+  }
+  .contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .form {
+        width: 70%;
+        input {
+          border: 2px solid rgba(255, 255, 255, 0.253);
+          border-radius: 10px;
+          width: 70%;
+          padding: 2%;
+          background: none;
+          margin-bottom: 3%;
+          outline: none;
+          background: url("../photos/send.svg") no-repeat scroll 95% 50%;
+        }
+        input::placeholder {
+          color: #cbd0d3;
+        }
+        p {
+          font-size: 14px;
+          color: #cbd0d3;
+        }
+      }
+      .socials {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        > img {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+// MEDIA QUERIES
+@media only screen and (max-width: 1080px) {
+  footer{
+    flex-direction: column;
+    .navigation, .contact{
+      width: 100%;
+      
+    }
+    .navigation{
+      margin-bottom: 6%;
+    }
+  }
+}

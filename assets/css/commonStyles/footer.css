@@ -1,0 +1,126 @@
+footer {
+  background: #a6adb4;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer .navigation {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .navigation .links {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .navigation .links .menu nav ul li a {
+  line-height: 27px;
+  font-weight: bold;
+  color: #cbd0d3;
+}
+
+footer .contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .contact .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .contact .container .form {
+  width: 70%;
+}
+
+footer .contact .container .form input {
+  border: 2px solid rgba(255, 255, 255, 0.253);
+  border-radius: 10px;
+  width: 70%;
+  padding: 2%;
+  background: none;
+  margin-bottom: 3%;
+  outline: none;
+  background: url("../photos/send.svg") no-repeat scroll 95% 50%;
+}
+
+footer .contact .container .form input::-webkit-input-placeholder {
+  color: #cbd0d3;
+}
+
+footer .contact .container .form input:-ms-input-placeholder {
+  color: #cbd0d3;
+}
+
+footer .contact .container .form input::-ms-input-placeholder {
+  color: #cbd0d3;
+}
+
+footer .contact .container .form input::placeholder {
+  color: #cbd0d3;
+}
+
+footer .contact .container .form p {
+  font-size: 14px;
+  color: #cbd0d3;
+}
+
+footer .contact .container .socials {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contact .container .socials > img {
+  width: 10%;
+}
+
+@media only screen and (max-width: 1080px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .navigation, footer .contact {
+    width: 100%;
+  }
+  footer .navigation {
+    margin-bottom: 6%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

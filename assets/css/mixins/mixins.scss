@@ -37,3 +37,27 @@
     color: #a6adb4;
   }
 }
+@mixin time {
+  .time {
+    p {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 2%;
+      }
+    }
+
+    margin-top: $percent;
+    color: #a6adb4;
+  }
+}
+@mixin avatar($url) {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  border: 2px solid white;
+}
