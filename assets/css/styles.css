@@ -265,13 +265,15 @@ main .world-news .pic-info .text p {
   margin-bottom: 5%;
 }
 
-main .world-news .pic-info .text a {
+main .world-news .pic-info .text button {
   font-size: 11px;
   color: white;
   text-transform: uppercase;
   background: #fa6980;
   padding: 2%;
   border-radius: 8px;
+  border: 0;
+  cursor: pointer;
 }
 
 main .world-news .more-news {
