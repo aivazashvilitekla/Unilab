@@ -241,7 +241,8 @@ main .news .form .form-container form > div {
   font-size: 13px;
 }
 
-main .news .form .form-container form > div input {
+main .news .form .form-container form > div input, main .news .form .form-container form > div select {
+  background: none;
   width: 90%;
   padding: 2% 1%;
   border-radius: 5px;
